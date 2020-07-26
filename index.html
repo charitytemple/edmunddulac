@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Canvas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/80e205da37.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="swiper-bundle.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <nav>
+
+        <!--Hamburger button-->
+          <label for="hamburger"><i class="fas fa-bars"></i></label>
+          <input type="checkbox" id="hamburger"></input>
+
+        <div id="expandedmenu">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">All artists</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </nav>
+
+      <h2 class="logo">Canvas</h2>
+      <i class="fas fa-search"></i>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <p class="overline">Featured</p>
+        <h1>Edmund Dulac</h1>
+        <p>French-born artist Edmund Dulac (1882–1953)
+          achieved prominence during the Golden Age of
+          Illustration. He preferred to work in
+          watercolors and remains best known for his
+          imaginative illustrations for fairy tales and other
+          children’s books.</p>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/EdmundDulac02.jpg"></div>
+          <div class="swiper-slide"><img src="images/EdmundDulac03.jpg"></div>
+          <div class="swiper-slide"><img src="images/EdmundDulac04.jpg"></div>
+          <div class="swiper-slide"><img src="images/EdmundDulac05.jpg"></div>
+          <div class="swiper-slide"><img src="images/EdmundDulac07.jpg"></div>
+          <div class="swiper-slide"><img src="images/EdmundDulac08.jpg"></div>
+          <div class="swiper-slide"><img src="images/EdmundDulac09.jpg"></div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 15,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
